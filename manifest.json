@@ -1,0 +1,16 @@
+{
+    "name": "Getting Started with Chrome Extension",
+    "version": "1.0",
+    "description": "A simple chrome extension as a learning project",
+    "manifest_version": 2,
+    "incognito": "split",
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "icons": {
+        "128": "icon.png"
+    }
+  }
