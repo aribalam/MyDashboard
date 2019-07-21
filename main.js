@@ -15,3 +15,14 @@ todoInput.onkeydown = (event) => {
         });
     }
 }
+
+let todosDiv = document.getElementById('todos');
+chrome.storage.sync.get('todos', (data) => {
+
+    for (let i = 0; i < data.todos.length; i++) {
+        let todoItem = document.createElement('div');
+        todoItem.className = "todo_item";
+        todoItem.innerText = data.todos[i].text;
+        todosDiv.append(todoItem);
+    }
+});
