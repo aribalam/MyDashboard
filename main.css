@@ -71,9 +71,26 @@
 	margin: 30px;
 	text-align: center;
 	font-size: 30px;
+	display: flex;
+	flex-direction: column-reverse;
 }
 
 .todo_item {
 	padding: 10px;
 	min-width: 700px;
+	display: flex;
+	justify-content: center;
+}
+
+.checkbox_wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.checkbox_wrapper input {
+	border: 2px solid #aaaaaa
+}
+
+.todo_item_text {
+	flex-grow: 1;
 }
