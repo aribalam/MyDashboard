@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.text-input {
+  border: none;
+  border-bottom: 1px solid grey;
+  margin: 10px;
+  width: 800px;
+  font-size: 50px;
+}
+
+.text-input:hover {
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.text-input:focus {
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+}
