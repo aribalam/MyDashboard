@@ -6,7 +6,9 @@ import TextView from './ui/textEditor';
 function App() {
   return (
     <div className="App">
-      <TextView />
+      <TextView
+      fontSize="30px"
+      />
     </div>
   );
 }
