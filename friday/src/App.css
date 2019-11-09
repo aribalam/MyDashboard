@@ -23,19 +23,29 @@
 
 .text-input {
   border: none;
-  border-bottom: 1px solid grey;
-  margin: 10px;
   width: 800px;
-  font-size: 50px;
-}
-
-.text-input:hover {
-  border: none;
-  border-bottom: 2px solid black;
-}
-
-.text-input:focus {
-  border: none;
-  border-bottom: 2px solid black;
+  background: transparent;
+  text-align: left;
+  position: absolute;
   outline: none;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+/* .text-input:focus {
+  outline: none;
+} */
+
+.placeholder-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -2;
+  color: grey;
+}
+
+.text-wrapper {
+  position: relative;
+  margin: 20px;
 }
