@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-export default function TextView(props) {
+export default function EditableText(props) {
 
     const [placeholder, setPlaceholder] = useState(true);
     const [editable, setEditable] = useState(true);
@@ -23,7 +23,7 @@ export default function TextView(props) {
             <p className="text-input" contentEditable={editable} onKeyDown={handleChange}>
             </p>
             {   placeholder? 
-                <div className="placeholder-overlay">Title..</div> : ''
+                <div className="placeholder-overlay">{props.placeholderText}</div> : ''
             }
         </div>
     )
